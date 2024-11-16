@@ -1,0 +1,7 @@
+<app-transition [condition]="game != undefined && game.started"></app-transition>
+
+<img #image src="" alt="jigsaw image" class="img">
+
+<canvas #canvas class="jigsaw" (mousedown)="pickUpPiece($event)" (mousemove)="dragPiece($event)"
+    (mouseup)="dropPiece($event)" (mouseleave)="dropPiece($event)">
+</canvas>
